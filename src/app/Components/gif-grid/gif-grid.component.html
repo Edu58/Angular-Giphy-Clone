@@ -1,0 +1,10 @@
+<!-- <button type="button" class="btn btn-primary" (click)="getGifs()">Get Gifs</button> -->
+
+<div class="row">
+    <div class="col-4 mx-2 my-2" *ngFor="let gif of Gifs" style="width: auto;">
+        <app-gif 
+        [image]="gif.images.downsized.url"
+        [title]="gif.title">
+        </app-gif>
+    </div>
+</div>
